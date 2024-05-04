@@ -2,6 +2,8 @@ import Image from "next/image";
 import { mockImagesURL } from "../lib/mock-images";
 import { db } from "@/server/db";
 
+export const dynamic = "force-dynamic";
+
 const mockImages = mockImagesURL.map((url, id) => ({
   id,
   url,
